@@ -31,7 +31,7 @@ body {
 }
 header {
   height: 42rem;
-  background-image: url(/../images/desktop/image-hero.jpg);
+  background-image: url(../../images/desktop/image-hero.jpg);
   background-size: cover;
   background-position: -3rem 0rem;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ footer {
 }
 @media screen and (width <= 768px) {
   header {
-    background-image: url(/../images/mobile/image-hero.jpg);
+    background-image: url(../../images/mobile/image-hero.jpg);
     background-position: 0rem;
   }
   #webNavigation {
@@ -297,16 +297,17 @@ footer {
 
 @media screen and (width>=1900px) {
   nav {
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
   }
   .hero {
     margin-top: 7%;
    
   }
+
   .slogan {
     font-size: 4.5em;
-    width: 46rem;
+    width: 40rem;
   }
   footer{
     min-height: 34vh;
