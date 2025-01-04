@@ -27,7 +27,7 @@ body {
 
 header {
   height: 42rem;
-  background-image: url(/../../images/desktop/image-hero.jpg);
+  background-image: url(../images/desktop/image-hero.jpg);
   background-size: cover;
   background-position: -3rem 0rem;
   background-repeat: no-repeat;
