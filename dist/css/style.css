@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap");
+/* White  */
+/* Black  */
+/* Dark Gray */
+/* Very Dark Gray */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 95vh;
+}
+
+header {
+  height: 42rem;
+  background-image: url(/../../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: -3rem 0rem;
+  background-repeat: no-repeat;
+}
+
+.navigationLi {
+  list-style: none;
+}
+.navigationLi a {
+  color: hsl(0, 0%, 100%);
+  font-family: Alata;
+  cursor: pointer;
+  position: relative;
+}
+.navigationLi a:visited, .navigationLi a:active, .navigationLi a:hover {
+  color: hsl(0, 0%, 100%);
+}
+.navigationLi a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  height: 3px;
+  width: 20px;
+  top: 2.3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.btn-close {
+  --bs-btn-close-bg: none !important;
+}
+.btn-close img {
+  width: 1.5rem;
+}
+
+.hero {
+  margin-top: 15%;
+  margin-left: 13%;
+}
+
+.slogan {
+  color: hsl(0, 0%, 100%);
+  font-family: Josefin Sans !important;
+  font-size: 4em;
+  width: 40rem;
+  padding-left: 3rem;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: 0;
+}
+
+.vr-flex {
+  max-width: 90%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.vr-image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.vr-description {
+  position: absolute;
+  color: hsl(0, 0%, 0%);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  left: 45%;
+  top: 40%;
+}
+.vr-description .para {
+  padding: 3rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.vr-description h3 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 2em;
+  font-family: Josefin Sans;
+}
+.vr-description p {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  color: hsl(0, 0%, 55%);
+  font-family: Alata;
+}
+
+.creations-grid {
+  max-width: 95%;
+  margin: 1rem auto;
+}
+
+.col-lg-6 {
+  padding-top: 0.5rem;
+}
+
+.sec-title {
+  font-family: Josefin Sans;
+}
+
+.see-button {
+  outline: none;
+  border: 2px solid hsl(0, 0%, 0%);
+  font-family: Josefin Sans;
+  color: hsl(0, 0%, 0%);
+  background-color: transparent;
+  padding: 0.6rem 1.5rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.see-button:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.footer-link a {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+.footer-link a:hover, .footer-link a:visited, .footer-link a:active {
+  color: hsl(0, 0%, 100%);
+}
+.footer-link a:hover {
+  border-bottom: 3px solid hsl(0, 0%, 100%);
+  margin-top: 3px;
+}
+
+.icon-link:hover img {
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.copyright {
+  font-size: 1rem;
+  color: hsl(0, 0%, 55%);
+  font-family: Alata;
+}
+
+@media screen and (width <= 1024px) {
+  .vr-description {
+    position: relative;
+    -ms-flex-item-align: auto;
+        align-self: auto;
+    -webkit-box-flex: 1.3;
+        -ms-flex: 1.3;
+            flex: 1.3;
+    left: auto;
+    top: auto;
+  }
+  .vr-description .para {
+    padding: 1rem;
+  }
+  .vr-description h3,
+  .vr-description p {
+    margin-top: auto;
+    margin-left: 1rem;
+  }
+}
+@media screen and (width <= 992px) {
+  header {
+    background-position: -1rem 0rem;
+  }
+  .slogan {
+    width: 32rem;
+  }
+}
+@media screen and (width <= 768px) {
+  header {
+    background-image: url(/../../images/mobile/image-hero.jpg);
+    background-position: 0rem;
+  }
+  #webNavigation {
+    background-color: hsl(0, 0%, 0%);
+  }
+  .navigationLi li {
+    padding-top: 0.5rem;
+  }
+  .navigationLi li a {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: Josefin Sans;
+  }
+  .navigationLi li a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    height: 3px;
+    width: 20px;
+    top: 2.3rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: none;
+  }
+  .navigationLi .hero {
+    margin-top: 30%;
+  }
+  .navigationLi .slogan {
+    font-size: 3em;
+    margin: auto;
+  }
+  .navigationLi .vr-description {
+    position: relative;
+    -ms-flex-item-align: auto;
+        align-self: auto;
+    left: auto;
+    top: auto;
+  }
+  .navigationLi .vr-description .para {
+    padding: 1rem;
+  }
+  .navigationLi .vr-description h3,
+  .navigationLi .vr-description p {
+    margin-top: auto;
+    margin-left: auto;
+  }
+  .navigationLi .vr-description h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (width <= 768px) and (width <= 600px) {
+  .hero {
+    margin: 50% auto;
+  }
+  .slogan {
+    width: 22rem;
+    margin: auto;
+    font-size: 2.5em;
+  }
+  .vr-flex {
+    max-width: 98%;
+  }
+  .creations-grid {
+    max-width: 98%;
+  }
+  .inner-footer {
+    width: 95%;
+    border: 2px solid red;
+  }
+}
+@media screen and (width <= 768px) and (width >= 1900px) {
+  nav {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .hero {
+    margin-top: 7%;
+  }
+  .slogan {
+    font-size: 4.5em;
+    width: 40rem;
+  }
+  footer {
+    min-height: 34vh;
+    padding: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
