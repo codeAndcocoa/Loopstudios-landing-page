@@ -280,7 +280,6 @@ footer {
   }
   .inner-footer {
     width: 95%;
-    border: 2px solid red;
   }
 }
 @media screen and (width <= 768px) and (width >= 1900px) {
